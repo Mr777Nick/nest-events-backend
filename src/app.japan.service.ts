@@ -10,6 +10,7 @@ export class AppJapanService {
         ) { }
         
     getHello(): string {
+        console.log(process.env.DB_HOST)
         return `Konnichiwa! from ${this.name}, ${this.message}` ;
     }
 }

@@ -30,7 +30,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://{{base-url}}:3000/events",
+					"raw": "http://{{base-url}}:3000/events?when=5",
 					"protocol": "http",
 					"host": [
 						"{{base-url}}"
@@ -38,6 +38,12 @@
 					"port": "3000",
 					"path": [
 						"events"
+					],
+					"query": [
+						{
+							"key": "when",
+							"value": "5"
+						}
 					]
 				}
 			},
@@ -70,7 +76,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"cool\",\r\n    \"description\": \"this is way cool\",\r\n    \"when\": \"2021-06-21\",\r\n    \"address\": \"cool\"\r\n}",
+					"raw": "{\r\n    \"name\": \"cool event\",\r\n    \"description\": \"this is way cool\",\r\n    \"when\": \"2021-07-04\",\r\n    \"address\": \"cool address\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

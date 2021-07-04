@@ -22,4 +22,10 @@ export class Event {
         cascade: true
     })
     attendees: Attendee[];
+
+    attendeeCount?: number;
+
+    attendeeRejected?: number;
+    attendeeMaybe?: number;
+    attendeeAccepted?: number;
 }

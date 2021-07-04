@@ -30,7 +30,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://{{base-url}}:3000/events?when=5",
+					"raw": "http://{{base-url}}:3000/events",
 					"protocol": "http",
 					"host": [
 						"{{base-url}}"
@@ -38,12 +38,6 @@
 					"port": "3000",
 					"path": [
 						"events"
-					],
-					"query": [
-						{
-							"key": "when",
-							"value": "5"
-						}
 					]
 				}
 			},

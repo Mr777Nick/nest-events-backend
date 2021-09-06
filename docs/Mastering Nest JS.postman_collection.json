@@ -266,6 +266,36 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Profile using JWT Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic3ViIjoxLCJpYXQiOjE2MzA5MDg5MzAsImV4cCI6MTYzMDkxMjUzMH0.isgJMP0eW7WGgkbAZ7vAc2DhAZ8xJzMzs4WpEDffCYM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base-url}}:3000/auth/profile",
+					"protocol": "http",
+					"host": [
+						"{{base-url}}"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"profile"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

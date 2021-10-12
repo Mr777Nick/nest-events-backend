@@ -296,6 +296,34 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Kaka22\",\r\n    \"password\": \"ACMilan22\",\r\n    \"retypedPassword\": \"ACMilan22\",\r\n    \"firstName\": \"Ricardo Izecson\",\r\n    \"lastName\": \"dos Santos Leite\",\r\n    \"email\": \"kaka@acmilan.com\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{base-url}}:3000/users",
+					"protocol": "http",
+					"host": [
+						"{{base-url}}"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

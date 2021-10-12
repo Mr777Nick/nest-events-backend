@@ -66,11 +66,21 @@
 		{
 			"name": "Post /events",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Iktha2EyMiIsInN1YiI6MiwiaWF0IjoxNjM0MDYwMTM3LCJleHAiOjE2MzQwNjM3Mzd9.5tKK4dfblRiW3irMSIk8D1UeIYtVkX_Uh50oZ2pscXI",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"cool event\",\r\n    \"description\": \"this is way cool\",\r\n    \"when\": \"2021-07-04\",\r\n    \"address\": \"cool address\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Milan VS Inter\",\r\n    \"description\": \"16th matchday Serie A\",\r\n    \"when\": \"2021-10-30T19:30:00\",\r\n    \"address\": \"San Siro\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -245,7 +255,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"Admin\",\r\n    \"password\": \"password\"\r\n}",
+					"raw": "{\r\n    \"username\": \"Kaka22\",\r\n    \"password\": \"ACMilan22\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

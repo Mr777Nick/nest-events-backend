@@ -185,6 +185,6 @@ export class EventsService {
     ): SelectQueryBuilder<Event> {
         return this.getEventsBaseQuery()
             .leftJoinAndSelect('e.attendees', 'a')
-            .where('a.userId = :UserId', { userId });
+            .where('a.userId = :userId', { userId });
     }
 }
